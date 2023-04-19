@@ -1,0 +1,98 @@
+// messages 
+[
+    {
+        text: "I don’t know if we need to switch to Angular, what do you advise?",
+        user_id: "U052D2QRLTU",
+        timestamp: "1681137811.637759",
+        thread_timestamp: "",
+        channel_id: "C051YG9REF9",
+    },
+    {
+        text: "Hi Daniel, I think Angular would be a great choice for our project. It has a lot of great features and is very popular in the industry.",
+        timestamp: "1681137822.637759",
+        thread_timestamp: "1681137811.637759",
+        user_id: "U051Y0YPG51",
+        channel_id: "C051YG9REF9",
+    },
+    {
+        text: "Hey Daniel, I don’t think we need to switch to Angular. React has been working well for us and has a larger community.",
+        timestamp: "1681137833.637759",
+        thread_timestamp: "1681137811.637759",
+        user_id: "U051V34MTS2",
+        channel_id: "C051YG9REF9",
+    },
+    {
+        text: "Agree with Jack, Angular isn't best choice, but probably we should take a look on Vue JS, my friend from other company likes it",
+        timestamp: "1681137835.637759",
+        thread_timestamp: "1681137811.637759",
+        user_id: "U051V34TNS2",
+        channel_id: "C051YG9REF9",
+    },
+    {
+        text: "Thanks for all your input. I’ll take a closer look at Angular, React and Vue and make a decision soon.",
+        timestamp: "1681137844.637759",
+        thread_timestamp: "1681137811.637759",
+        user_id: "U052D2QRLTU",
+        channel_id: "C051YG9REF9",
+    },
+    {
+        text: "Ok, Daniel, with Vue JS it's better to start view some youtube videos rather than reading docs, good luck!",
+        timestamp: "1681137845.637759",
+        thread_timestamp: "1681137811.637759",
+        user_id: "U051V34TNS2",
+        channel_id: "C051YG9REF9",
+    },
+    {
+        text: "Hey guys, just a heads up that we’ll need to integrate with the new payment API that the finance team is implementing. Please let me know if you have any questions or concerns.",
+        timestamp: "1681137866.637759",
+        thread_timestamp: "",
+        user_id: "U051ZKFNPRM",
+        channel_id: "C051YG9REAA",
+    },
+    {
+        text: "Thanks for letting us know, Olivia. I’ll make sure to start looking into the integration on our end.",
+        timestamp: "1681137877.637759",
+        thread_timestamp: "1681137866.637759",
+        user_id: "U051YK1L8JG",
+        channel_id: "C051YG9REAA",
+    },
+];
+
+// users
+[
+    {
+        id: "U052D2QRLTU",
+        name: "Daniel",
+    },
+    {
+        id: "U051Y0YPG51",
+        name: "Sarah",
+    },
+    {
+        id: "U051V34MTS2",
+        name: "Jack",
+    },
+    {
+        id: "U051ZKFNPRM",
+        name: "Olivia",
+    },
+    {
+        id: "U051YK1L8JG",
+        name: "James",
+    },
+    {
+        id: "U051V34TNS2",
+        name: "Rachel",
+    },
+],
+// channels 
+    [
+        {
+            id: "C051YG9REF9",
+            name: "frontend",
+        },
+        {
+            id: "C051YG9REAA",
+            name: "backend",
+        },
+    ];
