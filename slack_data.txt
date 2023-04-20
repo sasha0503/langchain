@@ -1,4 +1,4 @@
-// messages 
+// messages
 [
     {
         text: "I don’t know if we need to switch to Angular, what do you advise?",
@@ -84,8 +84,8 @@
         id: "U051V34TNS2",
         name: "Rachel",
     },
-],
-// channels 
+];
+// channels
     [
         {
             id: "C051YG9REF9",

@@ -1,0 +1,18 @@
+Q: Why does Sarah recommend Angular for the project and what makes it popular in the industry?
+A: Sarah recommends Angular because it has a lot of great features and is very popular in the industry. Angular is popular because it is easy to use, has great documentation and is highly scalable. It also has a large community of developers who are constantly creating and updating tools and libraries.
+
+Q: What are the benefits of using React and its community, and why does Jack prefer it over Angular?
+A: React has a larger community of developers and support available than Angular, which makes it easier to find solutions to common problems and get help with development. React is also well-known for its performance and scalability, meaning it can handle larger projects efficiently and can be used to create complex user interfaces. Jack prefers it because of its success within the team and its established track record.
+
+Q: How will Daniel make his decision between Angular, React, and Vue after receiving input from colleagues?
+A: Daniel will take a closer look at Angular, React, and Vue and make an informed decision based on the team's experience and preferences.
+
+Q: What other frontend technologies should Daniel consider, based on Rachel's suggestion?
+A: Rachel suggested that Daniel take a look at Vue JS.
+
+Q: Summarize the discussion in the frontend channel
+A: Daniel from the frontend development team asked for advice on whether they should switch to Angular, and Sarah responded positively, citing the company's experience with Angular and its popularity in the industry. Jack advised against it, citing React's success within the team. The team discussed the different options and weighed their experience and preferences before making an informed decision.
+
+Q: Which framework is the most popular in the company? How many projects have been implemented on it?
+A: Sarah mentioned that the company has already completed 25 projects of different sizes using Angular, and everything is working stably, and they have a team that can maintain it. Therefore, it appears that Angular is the most popular framework in the company and that 25 projects have been implemented on it.
+

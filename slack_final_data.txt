@@ -1,0 +1,20 @@
+frontend chanel
+
+Daniel: I don’t know if we need to switch to Angular, what do you advise?
+
+Sarah: Hi Daniel, I think Angular would be a great choice for our project. It has a lot of great features and is very popular in the industry.
+
+Jack: Hey Daniel, I don’t think we need to switch to Angular. React has been working well for us and has a larger community.
+
+Rachel: Agree with Jack, Angular isn't best choice, but probably we should take a look on Vue JS, my friend from other company likes it
+
+Daniel: Thanks for all your input. I’ll take a closer look at Angular, React and Vue and make a decision soon.
+
+Rachel: Ok, Daniel, with Vue JS it's better to start view some youtube videos rather than reading docs, good luck!
+
+backend chanel
+
+Olivia: Hey guys, just a heads up that we’ll need to integrate with the new payment API that the finance team is implementing. Please let me know if you have any questions or concerns.
+
+James: Thanks for letting us know, Olivia. I’ll make sure to start looking into the integration on our end.
+
