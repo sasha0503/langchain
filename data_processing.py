@@ -1,6 +1,6 @@
 import demjson
 
-with open("slack_data.txt") as f:
+with open("data/slack_data.txt") as f:
     slack_data = f.read()
 slack_data = [demjson.decode(i) for i in slack_data.split(';') if i]
 
@@ -28,5 +28,5 @@ for channel, messages in messages_in_channels.items():
     for message in messages_in_channels[channel]:
         final_slack_text += f"{decode(message['user_id'])}: {message['text']}\n\n"
 
-with open("slack_final_data.txt", "w") as f:
+with open("data/slack_final_data.txt", "w") as f:
     f.write(final_slack_text)

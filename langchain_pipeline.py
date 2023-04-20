@@ -6,9 +6,9 @@ from langchain.vectorstores import FAISS
 
 os.environ['OPENAI_API_KEY'] = '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'
 
-with open("notion_data.txt") as f:
+with open("data/notion_data.txt") as f:
     notion_data = f.read()
-with open("slack_final_data.txt") as f:
+with open("data/slack_final_data.txt") as f:
     slack_data = f.read()
 
 text_splitter = CharacterTextSplitter(

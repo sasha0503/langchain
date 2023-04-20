@@ -1,6 +1,6 @@
 from langchain_pipeline import chain, textsearch
 
-with open("test_queries.txt") as f:
+with open("data/test_queries.txt") as f:
     queries = f.read().split("\n")
 
 with open("test_answers.txt", "w") as f:
