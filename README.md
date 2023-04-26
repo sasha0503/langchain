@@ -1,11 +1,11 @@
 # langchain
 
-This is a github repository for a softcery test assignment.
+This is a GitHub repository for a Softcery test assignment.
 
-You can set your own OpenAI secret key in "langchain_pipeline.py" file.
+To set your own OpenAI secret key, modify the "langchain_pipeline.py" file.
 
-Original data is stored in "data" folder. 
+The original data is stored in the "data" folder.
 
-File "data_processing.py" is intended to transform js code to human readable text. Particularly in file "data/slack_final_data.txt" you can find ready-to-use version of the slack conversation.
+The "data_processing.py" file is designed to transform JS code into human-readable text. You can find a ready-to-use version of the Slack conversation in the "data/slack_final_data.txt" file.
 
-To get answers for the queries just run the "test_queries.py" file. The answers are stored in "test_answers.txt".
+To obtain answers for the queries, run the "test_queries.py" file. The answers will be stored in the "test_answers.txt" file.
