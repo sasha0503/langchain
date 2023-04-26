@@ -1,6 +1,6 @@
 Why does Sarah recommend Angular for the project and what makes it popular in the industry?
 What are the benefits of using React and its community, and why does Jack prefer it over Angular?
 How will Daniel make his decision between Angular, React, and Vue after receiving input from colleagues?
-What other frontend technologies should Daniel consider, based on Rachel's suggestion?
 Summarize the discussion in the frontend channel
 Which framework is the most popular in the company? How many projects have been implemented on it?
+What other frontend technologies should Daniel consider, based on Rachel's suggestion?

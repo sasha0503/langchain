@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #chat {
+            height: 400px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #chat p {
+            margin: 0;
+            padding: 5px;
+        }
+
+        #message {
+            width: 60%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        #predefined-questions {
+            margin-top: 20px;
+        }
+
+        .dialog {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            vertical-align: center;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(255, 255, 255);
+        }
+
+        .dialog button {
+            margin-top: 1rem;
+        }
+
+        .show-dialog {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<h1>Context Based Chatbot</h1>
+<button id="open-dialog"
+        style="position: absolute; top: 8px; right: 60px; padding: 20px; border: none; cursor: pointer">
+    see full text
+</button>
+<div id="dialog" class="dialog">
+    <p style="text-align: left; white-space: break-spaces; padding-left: 40px"><i>{{ full_text }}</i></p>
+    <button id="close-dialog">Close text</button>
+</div>
+<div id="chat" style="text-align: left; padding: 100px"></div>
+
+<input type="text" id="message" placeholder="Type your message here"/>
+<button onclick="sendMessage()">Send</button>
+
+<div id="predefined-questions">
+    <h2>Test Questions:</h2>
+    <div>
+        {% for question in questions %}
+        <button onclick="addQuestionToInput('{{question}}')">
+            {{question}}
+        </button>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    const openDialogButton = document.getElementById('open-dialog');
+    const closeDialogButton = document.getElementById('close-dialog');
+    const dialog = document.getElementById('dialog');
+
+    openDialogButton.addEventListener('click', () => {
+        dialog.classList.add('show-dialog');
+    });
+
+    closeDialogButton.addEventListener('click', () => {
+        dialog.classList.remove('show-dialog');
+    });
+    const chat = document.getElementById("chat");
+    const messageInput = document.getElementById("message");
+
+    // Function to add a predefined question to the input field
+    function addQuestionToInput(question) {
+        messageInput.value = question;
+    }
+
+    // Function to send a message to the server and display the response
+    function sendMessage() {
+        const message = messageInput.value;
+        // check if message is empty
+        if (!message) {
+            return;
+        }
+        const chatMessage = document.createElement("p");
+        chatMessage.innerText = "Q: " + message;
+        chat.appendChild(chatMessage);
+        let url = "{{url_for('chat')}}" + "?message=";
+        let paragraphs = document.getElementsByTagName("p");
+        for (let i = 4; i > 0; i--) {
+            if (paragraphs.length - i < 0)
+                break;
+            url = url + (paragraphs[paragraphs.length - i].innerHTML);
+        }
+        url = url + message;
+        fetch(url)
+            .then(response => response.json())
+            .then(json => {
+                const responseMessage = document.createElement("p");
+                responseMessage.style.color = "#4caf50";
+                responseMessage.innerText = "A: " + json.answer;
+                chat.appendChild(responseMessage);
+            })
+
+        // Clear input field after sending message
+        messageInput.value = "";
+    }
+</script>
+</body>
+</html>
