@@ -1,7 +1,5 @@
 # langchain
 
-This is a GitHub repository for a Softcery test assignment.
-
 To set your own OpenAI secret key, modify the "langchain_pipeline.py" file.
 
 The original data is stored in the "data" folder.
